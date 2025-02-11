@@ -7,7 +7,7 @@ p.connect(p.GUI)
 p.configureDebugVisualizer(p.COV_ENABLE_GUI, 1)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
 plane = p.loadURDF("plane.urdf")
-robot = p.loadURDF("arm.urdf")
+robot = p.loadURDF("basic_arm_modeling/arm.urdf")
 p.resetDebugVisualizerCamera(cameraDistance=1.7, cameraYaw=50, cameraPitch=-35, cameraTargetPosition=[0, 0, 0])
 L = 0.5
 p.setGravity(0,0,-10)
